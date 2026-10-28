@@ -75,7 +75,7 @@ All performance measurements were collected on the same machine and browser usin
 
 The point-cloud renderer reached about 240 FPS, while the Gaussian renderer reached about 75 FPS under the same test conditions. The point-cloud renderer is much faster because it mainly transforms and draws the input points. The Gaussian renderer performs additional preprocessing, depth sorting, quad rasterization, Gaussian evaluation, and alpha blending for the visible splats.
 
-![]\(images/cloudPoint.png)\
+![](images/cloudPoint.png)
 
 Compared with the point-cloud result, the Gaussian renderer produces continuous surfaces with the reconstructed scene colors instead of displaying the scene as separate yellow points. The point cloud clearly shows the overall geometry, but gaps between individual points remain visible. Gaussian splatting fills these regions using the projected size and opacity of each Gaussian, producing a much more complete reconstruction.
 
